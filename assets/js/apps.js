@@ -4,7 +4,7 @@ function signUp() {
   if (!username || !password) return alert("Fill all fields");
   localStorage.setItem("user", JSON.stringify({ username, password }));
   alert("Sign up successful!");
-  window.location.href = "login.html";
+  window.location.href = "indexl.html";
 }
 
 function login() {
@@ -21,7 +21,7 @@ function login() {
 
 function logout() {
   localStorage.setItem("loggedIn", "false");
-  window.location.href = "login.html";
+  window.location.href = "indexl.html";
 }
 
 function toggleDarkMode() {
@@ -32,7 +32,7 @@ function toggleDarkMode() {
 window.onload = function () {
   if (location.pathname.includes("index.html")) {
     const isLoggedIn = localStorage.getItem("loggedIn") === "true";
-    if (!isLoggedIn) window.location.href = "login.html";
+    if (!isLoggedIn) window.location.href = "indexl.html";
 
     if (localStorage.getItem("darkMode") === "true") {
       document.body.classList.add("dark-mode");
