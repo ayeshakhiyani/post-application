@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post App 🌈</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+  <div class="toggle-btn">
+    <button onclick="toggleDarkMode()">🌗 Toggle Theme</button>
+  </div>
+  <h1>🧁 Welcome to Your Cute Post App</h1>
+  <div class="post-form">
+    <input type="text" id="postTitle" placeholder="Post Title" />
+    <textarea id="postContent" rows="4" placeholder="Write your sweet post..."></textarea>
+    <label class="upload-label">📸 Add Photo
+      <input type="file" id="postImage" accept="image/*" />
+    </label>
+    <label class="upload-label">🎵 Add Audio
+      <input type="file" id="postAudio" accept="audio/*" />
+    </label>
+    <button onclick="addPost()">➕ Add Post</button>
+  </div>
+  <div class="posts-container" id="postsContainer"></div>
+  <div id="toast"></div>
+  <script src="./js/apps.js"></script>
+</body>
+</html>
+

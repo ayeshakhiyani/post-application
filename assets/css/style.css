@@ -1,0 +1,90 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to top right, #ffecd2, #fcb69f);
+  color: #333;
+  transition: 0.3s;
+  padding: 20px;
+  margin: 0;
+}
+body.dark-mode {
+  background: linear-gradient(to top right, #ced5d8, #464849);
+  color: #534d4d;
+}
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff4f8;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  text-align: center;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  color: #222;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.upload-label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+}
+.upload-label input {
+  display: none;
+}
+.logout-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: #ff4e50;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+.toggle-btn {
+  top: 10px;
+  left: 20px;
+  
+}
+.posts-container {
+  margin-top: 40px;
+}
+.post {
+  background: #fff8f0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4b6cb7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
