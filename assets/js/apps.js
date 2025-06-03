@@ -13,7 +13,7 @@ function login() {
   const user = JSON.parse(localStorage.getItem("user"));
   if (user && user.username === username && user.password === password) {
     localStorage.setItem("loggedIn", "true");
-    window.location.href = "index.html";
+    window.location.href = "indexp.html";
   } else {
     alert("Wrong credentials");
   }
@@ -30,7 +30,7 @@ function toggleDarkMode() {
 }
 
 window.onload = function () {
-  if (location.pathname.includes("index.html")) {
+  if (location.pathname.includes("indexp.html")) {
     const isLoggedIn = localStorage.getItem("loggedIn") === "true";
     if (!isLoggedIn) window.location.href = "indexl.html";
 
